@@ -7,7 +7,7 @@ export default function Tools() {
 
   return (
     <Box sx={{
-      height: '1000px',
+      height: '900px',
       p: 4,
       backgroundImage: `url('./tools.png')`,
       backgroundSize: 'contain',
