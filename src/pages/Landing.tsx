@@ -1,12 +1,12 @@
 import { Box, Typography } from '@mui/material';
 import { cloneElement, Fragment } from 'react';
 import BatchProcessing from './components/BatchProcessing';
-import Features from './components/Features';
 import IndexerStats from './components/IndexerStats';
 import Intro from './components/Intro';
 import Languages from './components/Languages';
 import MapSteps from './components/MapSteps';
 import MCPEverywhere from './components/MCPEverywhere';
+import Results from './components/Results';
 import Settings from './components/Settings';
 import TechBar from './components/TechBar';
 import Themes from './components/Themes';
@@ -19,12 +19,12 @@ const sections = [
     component: <Intro />
   },
   {
-    id: 'statsBar',
+    id: 'tools',
     component: <Tools />
   },
   {
-    id: 'features',
-    component: <Features />
+    id: 'results',
+    component: <Results />
   },
 
   {
