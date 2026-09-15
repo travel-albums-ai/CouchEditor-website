@@ -26,7 +26,7 @@ export default function Footer() {
           <Chip
             label={<Box sx={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
               <Typography color="primary" sx={{ fontWeight: 'bold' }} variant="caption" >Made for creators</Typography>
-              <Typography color="textDisabled" variant="caption">By a creator</Typography>
+              <Typography color="textSecondary" variant="caption">By a creator</Typography>
             </Box>}
             icon={<span style={{ fontSize: '1.5rem' }}>❤️</span>}
             sx={{

@@ -14,6 +14,7 @@ export default function StarterKit() {
       backgroundPosition: '550px 0px',
       backgroundRepeat: 'no-repeat',
       display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start',
+      my: 8,
     }}>
       <Box sx={{
         display: 'flex', flexDirection: 'column', gap: 2,

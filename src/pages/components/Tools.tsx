@@ -12,6 +12,7 @@ export default function Tools() {
       backgroundImage: `url('./tools.png')`,
       backgroundSize: 'contain',
       backgroundRepeat: 'no-repeat',
+      my: 8,
     }}>
 
       <Box sx={{
@@ -19,7 +20,7 @@ export default function Tools() {
         width: '350px',
         justifyContent: 'flex-start', alignItems: 'flex-start',
       }}>
-        <CustomChip title="Powerfull tools" />
+        <CustomChip title="Powerful tools" />
         <Typography variant="h4" color="textPrimary" sx={{ fontWeight: 'bold'  }}>
         Everything you need, <span style={{ color: theme.palette.primary.main }}>right at your fingertips</span>
         </Typography>
