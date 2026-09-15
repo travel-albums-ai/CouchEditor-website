@@ -5,19 +5,19 @@ export default function Header() {
 
   return (
     <>
-      <nav>
+      <Box>
         <Box sx={{ display: "flex", gap: 2, alignItems: "center", justifyContent: "space-between", flexWrap: 'wrap', py: 2, px: 4, width: '1280px', mx: 'auto' }}>
           <a className="nav-logo" href="#">
             <img src="logo_new_240.png" className="hero-logo" style={{ height: 24 }} />
           Couch Editor
           </a>
           <ul className="nav-links">
-            <li><a href="./#features">Features</a></li>
+            {/* <li><a href="./#features">Features</a></li>
             <li><a href="./#steps">Steps</a></li>
             <li><a href="./#languages">i18n</a></li>
             <li><a href="./#themes">Themes</a></li>
             <li><a href="./#mcpeverywhere">MCP</a></li>
-            <li><a href="./#settings">Settings</a></li>
+            <li><a href="./#settings">Settings</a></li> */}
             {/* <li><a href="./#how">Indexer</a></li> */}
             {/* <li><a href="./#connect">Connect</a></li> */}
           </ul>
@@ -32,7 +32,7 @@ export default function Header() {
             </Button>
           </Box>
         </Box>
-      </nav>
+      </Box>
     </>
   )
 }
