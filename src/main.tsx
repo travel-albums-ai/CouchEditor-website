@@ -5,9 +5,9 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App.tsx';
-import { defaultDarkTheme } from './theme.ts';
+import { defaultLightTheme } from './theme.ts';
 
-const theme = defaultDarkTheme;
+const theme = defaultLightTheme;
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

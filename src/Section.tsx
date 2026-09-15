@@ -3,10 +3,11 @@ import Box from '@mui/material/Box';
 import { cloneElement } from 'react';
 import './App.css';
 
-export default function Section({ index, children, icon, title, description, id }: { index: number, children: React.ReactNode, icon?: React.ReactNode, title?: string, description?: string, id: string }) {
+export default function Section({ index, children, icon, title, description, id, backgro }: { index: number, children: React.ReactNode, icon?: React.ReactNode, title?: string, description?: string, id: string }) {
 
   return  <>
     <Box sx={{
+      bgcolor: 'red',
       // overflow: 'hidden',
 
       padding: '140px 0',

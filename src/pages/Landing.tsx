@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { cloneElement, Fragment } from 'react';
 import BatchProcessing from './components/BatchProcessing';
 import Features from './components/Features';
@@ -69,12 +69,15 @@ export default function Landing() {
 
   return  <>
     {/* <Hero /> */}
-
-    {sections.map((section, index) => (
-      <Fragment key={section.id}>
-        {cloneElement(section.component, { id: section.id, index: index })}
-      </Fragment>
-    ))}
+    <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+      <Box sx={{ width: '1280px' }}>
+        {sections.map((section, index) => (
+          <Fragment key={section.id}>
+            {cloneElement(section.component, { id: section.id, index: index })}
+          </Fragment>
+        ))}
+      </Box>
+    </Box>
 
     <footer>
       <div class="container">

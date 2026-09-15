@@ -1,52 +1,41 @@
+import { Box, Button, Typography, useTheme } from '@mui/material';
+import Chip from '@mui/material/Chip';
+import { ArrowRight } from 'lucide-react';
 
 export default function Intro() {
+  const theme = useTheme();
 
-  const items = [
-    {
-      icon: <span style={{ fontSize: 32 }}>💗</span>,
-      title: "Barbie",
-      desc: "The cute one",
-      image: 'barbie.png',
-    },
-    {
-      icon: <span style={{ fontSize: 32 }}>🐈</span>,
-      title: "Catppuccin",
-      desc: "The fluffy one",
-      image: 'catppuccin.png',
-    },
-    {
-      icon: <span style={{ fontSize: 32 }}>🧛</span>,
-      title: "Dracula",
-      desc: "The spooky one",
-      image: 'dracula.png',
-    },
-    {
-      icon: <span style={{ fontSize: 32 }}>💛</span>,
-      title: "Monokai",
-      desc: "The classic one",
-      image: 'monokai.png',
-    },
-    {
-      icon: <span style={{ fontSize: 32 }}>🌑</span>,
-      title: "Solarized",
-      desc: "The bright one",
-      image: 'solarized.png',
-    },
-    {
-      icon: <span style={{ fontSize: 32 }}>🌆</span>,
-      title: "Tokyo Night",
-      desc: "The dark one",
-      image: 'tokyo.png',
-    }
-  ]
 
   return (
-    <>
+    <Box sx={{
+      height: '700px',
+      p: 4,
+      backgroundImage: `url('./intro.png')`,
+      backgroundSize: '1800px',
+      backgroundPosition: '-300px 0px',
+      backgroundRepeat: 'no-repeat',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'flex-start',
+      justifyContent: 'center',
+      gap: 4,
+      mb: 4,
+    }}>
+      <Chip label={"Edit • Experiment • Create • Locally"} color="primary" sx={{ px: 1 }} />
+      <Typography variant="h3" color="textPrimary" sx={{ fontWeight: 'bold', width: '400px' }}>
+        Turn your photos into something <span style={{ color: theme.palette.primary.main }}>truly extraordinary</span>
+      </Typography>
+      <Typography sx={{ width: '400px' }}>
+        Couch Editor is a modern, node-based photo editor that runs locally in your browser. No uploads, No limits. Just creativity
+      </Typography>
+      <Button variant="contained" color="primary">
+          Open Couch Editor <ArrowRight />
+      </Button>
 
-    intro
-      text
+      <Box>
+          1, 2, 3
+      </Box>
 
-      image
-    </>
+    </Box>
   )
 }
