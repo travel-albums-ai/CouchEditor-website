@@ -33,16 +33,6 @@ body {
   line-height: 1.6;
 }
 
-/* ── NOISE OVERLAY ── */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.5;
-}
 
 /* Chrome, Safari, Edge */
 ::-webkit-scrollbar {
@@ -54,12 +44,12 @@ body::before {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #90caf9;
+  background: #7152f8;
   border-radius: 10px;
 }
 
 /* Firefox */
 html {
   scrollbar-width: thin;
-  scrollbar-color: #90caf9 transparent;
+  scrollbar-color: #7152f8 transparent;
 }

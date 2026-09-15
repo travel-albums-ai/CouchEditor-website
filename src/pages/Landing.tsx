@@ -1,15 +1,8 @@
 import { Box, Typography } from '@mui/material';
 import { cloneElement, Fragment } from 'react';
-import BatchProcessing from './components/BatchProcessing';
-import IndexerStats from './components/IndexerStats';
+import Flow from './components/Flow';
 import Intro from './components/Intro';
-import Languages from './components/Languages';
-import MapSteps from './components/MapSteps';
-import MCPEverywhere from './components/MCPEverywhere';
 import Results from './components/Results';
-import Settings from './components/Settings';
-import TechBar from './components/TechBar';
-import Themes from './components/Themes';
 import Tools from './components/Tools';
 
 
@@ -19,50 +12,55 @@ const sections = [
     component: <Intro />
   },
   {
+    id: 'results',
+    component: <Results />
+  },
+  {
     id: 'tools',
     component: <Tools />
   },
   {
-    id: 'results',
-    component: <Results />
+    id: 'flow',
+    component: <Flow />
   },
 
-  {
-    id: 'steps',
-    component: <MapSteps />
-  },
-  {
-    id: 'batchProcessing',
-    component: <BatchProcessing />
-  },
-  {
-    id: 'languages',
-    component: <Languages />
-  },
-  {
-    id: 'themes',
-    component: <Themes />
-  },
-  {
-    id: 'techBar',
-    component: <TechBar />
-  },
-  {
-    id: 'mcpeverywhere',
-    component: <MCPEverywhere />
-  },
-  {
-    id: 'settings',
-    component: <Settings />
-  },
+
+  // {
+  //   id: 'steps',
+  //   component: <MapSteps />
+  // },
+  // {
+  //   id: 'batchProcessing',
+  //   component: <BatchProcessing />
+  // },
+  // {
+  //   id: 'languages',
+  //   component: <Languages />
+  // },
+  // {
+  //   id: 'themes',
+  //   component: <Themes />
+  // },
+  // {
+  //   id: 'techBar',
+  //   component: <TechBar />
+  // },
+  // {
+  //   id: 'mcpeverywhere',
+  //   component: <MCPEverywhere />
+  // },
+  // {
+  //   id: 'settings',
+  //   component: <Settings />
+  // },
   // {
   //   id: 'indexer',
   //   component: <Indexer />
   // },
-  {
-    id: 'indexerStats',
-    component: <IndexerStats />
-  }
+  // {
+  //   id: 'indexerStats',
+  //   component: <IndexerStats />
+  // }
 ]
 
 export default function Landing() {

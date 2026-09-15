@@ -1,5 +1,5 @@
 import { Box, Typography, useTheme } from '@mui/material';
-import Chip from '@mui/material/Chip';
+import CustomChip from '../../generics/CustomChip';
 
 export default function Results() {
 
@@ -17,6 +17,7 @@ export default function Results() {
       display: 'flex',
       justifyContent: 'flex-start',
       alignItems: 'center',
+      mb: 8,
     }}>
 
       <Box sx={{
@@ -24,7 +25,7 @@ export default function Results() {
         width: '350px',
         justifyContent: 'flex-start', alignItems: 'flex-start',
       }}>
-        <Chip label="See the difference" color="primary" />
+        <CustomChip title="See the difference" />
         <Typography variant="h4" color="textPrimary" sx={{ fontWeight: 'bold'  }}>
         Small changes, <span style={{ color: theme.palette.primary.main }}>Stunning results.</span>
         </Typography>
