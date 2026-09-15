@@ -7,17 +7,17 @@ export default function StarterKit() {
 
   return (
     <Box sx={{
-      height: '900px',
+      height: '600px',
       p: 4,
       backgroundImage: `url('./starterKit.png')`,
-      backgroundSize: '800px',
-      backgroundPosition: 'center 200px',
+      backgroundSize: '700px',
+      backgroundPosition: '550px 0px',
       backgroundRepeat: 'no-repeat',
-      display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center',
+      display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start',
     }}>
       <Box sx={{
         display: 'flex', flexDirection: 'column', gap: 2,
-        width: '750px',
+        width: '350px',
         justifyContent: 'flex-start', alignItems: 'flex-start',
       }}>
         <CustomChip title="Batteries included" />

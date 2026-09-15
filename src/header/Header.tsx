@@ -1,4 +1,4 @@
-import { Box, Button } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 import { ExternalLink, GitGraph } from 'lucide-react';
 
 export default function Header() {
@@ -6,11 +6,25 @@ export default function Header() {
   return (
     <>
       <Box>
-        <Box sx={{ display: "flex", gap: 2, alignItems: "center", justifyContent: "space-between", flexWrap: 'wrap', py: 2, px: 4, width: '1280px', mx: 'auto' }}>
-          <a className="nav-logo" href="#">
-            <img src="logo_new_240.png" className="hero-logo" style={{ height: 24 }} />
-          Couch Editor
-          </a>
+        <Box sx={{ display: "flex", gap: 2, alignItems: "center", justifyContent: "space-between", flexWrap: 'wrap', py: 1, px: 4, width: '1280px', mx: 'auto' }}>
+          <Box sx={{ display: 'flex', flexDirection: 'row', gap: 1, alignItems: 'center' }}>
+            <img src="couch-editor-purple-128x128.png" className="hero-logo" style={{ height: 64 }} />
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
+              <Box sx={{ display: 'flex', flexDirection: 'row', gap: 0 }}>
+                <Typography variant="h6" color="textPrimary" sx={{ }}>
+            Couch
+                </Typography>
+                <Typography variant="h6" color="primary" sx={{ fontWeight: 'bold' }}>
+            Editor
+                </Typography>
+              </Box>
+              <Box sx={{ display: 'flex', flexDirection: 'row', gap: 1 }}>
+                <Typography variant="caption" color="textDisabled" sx={{  }}>
+            Drag • Slide • See the difference
+                </Typography>
+              </Box>
+            </Box>
+          </Box>
           <ul className="nav-links">
             {/* <li><a href="./#features">Features</a></li>
             <li><a href="./#steps">Steps</a></li>

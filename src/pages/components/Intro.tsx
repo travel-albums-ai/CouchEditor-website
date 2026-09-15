@@ -7,7 +7,7 @@ export default function Intro() {
 
   return (
     <Box sx={{
-      height: '650px',
+      height: '600px',
       p: 4,
       backgroundImage: `url('./intro.png')`,
       backgroundSize: '900px',
