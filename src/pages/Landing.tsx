@@ -3,6 +3,7 @@ import { cloneElement, Fragment } from 'react';
 import Flow from './components/Flow';
 import Intro from './components/Intro';
 import Results from './components/Results';
+import Templates from './components/Templates';
 import Tools from './components/Tools';
 
 
@@ -23,44 +24,11 @@ const sections = [
     id: 'flow',
     component: <Flow />
   },
+  {
+    id: 'templates',
+    component: <Templates />
+  },
 
-
-  // {
-  //   id: 'steps',
-  //   component: <MapSteps />
-  // },
-  // {
-  //   id: 'batchProcessing',
-  //   component: <BatchProcessing />
-  // },
-  // {
-  //   id: 'languages',
-  //   component: <Languages />
-  // },
-  // {
-  //   id: 'themes',
-  //   component: <Themes />
-  // },
-  // {
-  //   id: 'techBar',
-  //   component: <TechBar />
-  // },
-  // {
-  //   id: 'mcpeverywhere',
-  //   component: <MCPEverywhere />
-  // },
-  // {
-  //   id: 'settings',
-  //   component: <Settings />
-  // },
-  // {
-  //   id: 'indexer',
-  //   component: <Indexer />
-  // },
-  // {
-  //   id: 'indexerStats',
-  //   component: <IndexerStats />
-  // }
 ]
 
 export default function Landing() {
@@ -68,7 +36,7 @@ export default function Landing() {
   return  <>
     {/* <Hero /> */}
     <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
-      <Box sx={{ width: '1280px' }}>
+      <Box sx={{ width: '1280px', display: 'flex', flexDirection: 'column', gap: 4 }}>
         {sections.map((section, index) => (
           <Fragment key={section.id}>
             {cloneElement(section.component, { id: section.id, index: index })}

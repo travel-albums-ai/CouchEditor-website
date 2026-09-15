@@ -1,34 +1,30 @@
 import { Box, Typography, useTheme } from '@mui/material';
 import CustomChip from '../../generics/CustomChip';
 
-export default function Results() {
+export default function Templates() {
 
   const theme = useTheme();
 
   return (
     <Box sx={{
-      height: '500px',
+      height: '600px',
       p: 4,
-      backgroundImage: `url('./changes.png')`,
-      backgroundSize: '1000px',
-      backgroundPosition: '300px 0px',
+      backgroundImage: `url('./templates.png')`,
+      backgroundSize: 'contain',
+      backgroundPosition: '0px 200px',
       backgroundRepeat: 'no-repeat',
-      display: 'flex',
-      justifyContent: 'flex-start',
-      alignItems: 'center',
     }}>
-
       <Box sx={{
         display: 'flex', flexDirection: 'column', gap: 2,
         width: '350px',
         justifyContent: 'flex-start', alignItems: 'flex-start',
       }}>
-        <CustomChip title="See the difference" />
+        <CustomChip title="Ready-to-use Templates" />
         <Typography variant="h4" color="textPrimary" sx={{ fontWeight: 'bold'  }}>
-        Small changes, <span style={{ color: theme.palette.primary.main }}>Stunning results.</span>
+        Templates to <span style={{ color: theme.palette.primary.main }}>spark your creativity</span>
         </Typography>
         <Typography variant="caption" color="textSecondary" sx={{ fontSize: '14px', textShadow: `0px 0px 8px ${theme.palette.background.paper}` }}>
-        Adjust a setting and see the stunning results instantly. Every tool you use contributes to the final masterpiece. You are in control of every detail.
+        Kickstart your projects with our ready-to-use templates. Learn, remix or make them your own.
         </Typography>
       </Box>
 
