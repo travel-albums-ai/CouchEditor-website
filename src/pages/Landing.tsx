@@ -3,6 +3,7 @@ import { cloneElement, Fragment } from 'react';
 import Flow from './components/Flow';
 import Intro from './components/Intro';
 import Results from './components/Results';
+import StarterKit from './components/StarterKit';
 import Templates from './components/Templates';
 import Tools from './components/Tools';
 
@@ -13,6 +14,10 @@ const sections = [
     component: <Intro />
   },
   {
+    id: 'flow',
+    component: <Flow />
+  },
+  {
     id: 'results',
     component: <Results />
   },
@@ -20,13 +25,14 @@ const sections = [
     id: 'tools',
     component: <Tools />
   },
-  {
-    id: 'flow',
-    component: <Flow />
-  },
+
   {
     id: 'templates',
     component: <Templates />
+  },
+  {
+    id: 'starterKit',
+    component: <StarterKit />
   },
 
 ]

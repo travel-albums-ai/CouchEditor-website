@@ -7,11 +7,11 @@ export default function Intro() {
 
   return (
     <Box sx={{
-      height: '550px',
+      height: '650px',
       p: 4,
       backgroundImage: `url('./intro.png')`,
-      backgroundSize: '800px',
-      backgroundPosition: '500px 0px',
+      backgroundSize: '900px',
+      backgroundPosition: '400px 0px',
       backgroundRepeat: 'no-repeat',
       display: 'flex',
       flexDirection: 'column',
