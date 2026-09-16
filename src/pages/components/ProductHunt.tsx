@@ -5,7 +5,7 @@ export default function ProductHunt() {
   return (
     <a href="https://www.producthunt.com/products/coucheditor" target="_blank" rel="noopener noreferrer">
       <Box sx={{
-        height: '300px',
+        height: '400px',
         p: 4,
         backgroundImage: `url('./productHunt.png')`,
         backgroundSize: '800px',
