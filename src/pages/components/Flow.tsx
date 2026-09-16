@@ -7,11 +7,11 @@ export default function Flow() {
 
   return (
     <Box sx={{
-      height: '600px',
+      height: '710px',
       p: 4,
-      backgroundImage: `url('./flow.png')`,
-      backgroundSize: '950px',
-      backgroundPosition: '-30px -10px',
+      backgroundImage: `url('./pipelineExample.png')`,
+      backgroundSize: '920px',
+      backgroundPosition: '0px -10px',
       backgroundRepeat: 'no-repeat',
       display: 'flex',
       justifyContent: 'flex-end',
@@ -23,7 +23,7 @@ export default function Flow() {
         width: '320px',
         justifyContent: 'flex-end', alignItems: 'flex-end',
       }}>
-        <CustomChip title="Your (Work)Flow" />
+        <CustomChip title="Your Pipeline" />
         <Typography variant="h4" color="textPrimary" sx={{ fontWeight: 'bold', textAlign: 'right' }}>
         Create with <span style={{ color: theme.palette.primary.main }}>a flow</span> that suits your style
         </Typography>

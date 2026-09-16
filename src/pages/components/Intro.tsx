@@ -7,11 +7,11 @@ export default function Intro() {
 
   return (
     <Box sx={{
-      height: '600px',
+      height: '700px',
       p: 4,
       backgroundImage: `url('./intro.png')`,
-      backgroundSize: '900px',
-      backgroundPosition: '400px 0px',
+      backgroundSize: '1050px',
+      backgroundPosition: '240px 0px',
       backgroundRepeat: 'no-repeat',
       display: 'flex',
       flexDirection: 'column',
@@ -20,19 +20,25 @@ export default function Intro() {
       gap: 4,
       mb: 8,
     }}>
-      <CustomChip title="Edit • Experiment • Create • Locally" />
-      <Typography variant="h3" color="textPrimary" sx={{ fontWeight: 'bold', width: '400px' }}>
+      <Box sx={{
+        display: 'flex', flexDirection: 'column', gap: 2,
+        width: '380px',
+        justifyContent: 'flex-end', alignItems: 'flex-start',
+      }}>
+        <CustomChip title="Edit • Experiment • Create • Locally" />
+        <Typography variant="h3" color="textPrimary" sx={{ fontWeight: 'bold' }}>
         Turn your photos into something <span style={{ color: theme.palette.primary.main }}>truly extraordinary</span>
-      </Typography>
-      <Typography sx={{ width: '400px' }}>
+        </Typography>
+        <Typography>
         Couch Editor is a modern, node-based photo editor that runs locally in your browser. No uploads, No limits. Just creativity
-      </Typography>
-      <Button variant="contained" color="primary" size="large" sx={{ borderRadius: 10 }}>
+        </Typography>
+        <Button variant="contained" color="primary" size="large" sx={{ borderRadius: 10 }}>
           Open Couch Editor <ArrowRight />
-      </Button>
+        </Button>
 
-      <Box>
+        <Box>
           1, 2, 3
+        </Box>
       </Box>
 
     </Box>
