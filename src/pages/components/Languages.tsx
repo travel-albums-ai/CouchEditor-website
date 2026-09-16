@@ -7,10 +7,10 @@ export default function Languages() {
 
   return (
     <Box sx={{
-      height: '520px',
+      height: '620px',
       p: 4,
       backgroundImage: `url('./settingsLanguages.png')`,
-      backgroundSize: '700px',
+      backgroundSize: '900px',
       backgroundPosition: '0px 0px',
       backgroundRepeat: 'no-repeat',
       display: 'flex',

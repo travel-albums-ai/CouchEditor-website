@@ -7,11 +7,11 @@ export default function StarterKit() {
 
   return (
     <Box sx={{
-      height: '600px',
+      height: '560px',
       p: 4,
       backgroundImage: `url('./starterKit.png')`,
-      backgroundSize: '700px',
-      backgroundPosition: '550px 0px',
+      backgroundSize: '900px',
+      backgroundPosition: '350px 0px',
       backgroundRepeat: 'no-repeat',
       display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start',
       my: 8,

@@ -7,7 +7,7 @@ export default function Templates() {
 
   return (
     <Box sx={{
-      height: '280px',
+      height: '270px',
       p: 4,
       backgroundImage: `url('./templates.png')`,
       backgroundSize: '850px',
