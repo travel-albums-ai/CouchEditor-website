@@ -1,9 +1,10 @@
 import { Box } from '@mui/material';
 import { cloneElement, Fragment } from 'react';
 import Footer from '../header/Footer';
-import Demo from './components/Demo';
 import Flow from './components/Flow';
 import Intro from './components/Intro';
+import Languages from './components/Languages';
+import ProductHunt from './components/ProductHunt';
 import Results from './components/Results';
 import StarterKit from './components/StarterKit';
 import Technology from './components/Technology';
@@ -20,16 +21,16 @@ const sections = [
     component: <Flow />
   },
   {
-    id: 'demo',
-    component: <Demo />
-  },
-  {
     id: 'results',
     component: <Results />
   },
   {
     id: 'tools',
     component: <Tools />
+  },
+  {
+    id: 'technology',
+    component: <Technology />
   },
   {
     id: 'templates',
@@ -39,9 +40,18 @@ const sections = [
     id: 'starterKit',
     component: <StarterKit />
   },
+
   {
-    id: 'technology',
-    component: <Technology />
+    id: 'languages',
+    component: <Languages />
+  },
+  // {
+  //   id: 'demo',
+  //   component: <Demo />
+  // },
+  {
+    id: 'productHunt',
+    component: <ProductHunt />
   },
 ]
 
