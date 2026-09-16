@@ -7,7 +7,7 @@ export default function Technology() {
 
   return (
     <Box sx={{
-      height: '900px',
+      height: '950px',
       p: 4,
       backgroundImage: `url('./tiles.png')`,
       backgroundSize: '1200px',
@@ -17,6 +17,7 @@ export default function Technology() {
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'flex-end',
+      mb: 8
     }}>
       <Box sx={{
 
