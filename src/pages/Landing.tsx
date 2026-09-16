@@ -17,6 +17,10 @@ const sections = [
     component: <Intro />
   },
   {
+    id: 'technology',
+    component: <Technology />
+  },
+  {
     id: 'flow',
     component: <Flow />
   },
@@ -28,10 +32,7 @@ const sections = [
     id: 'tools',
     component: <Tools />
   },
-  {
-    id: 'technology',
-    component: <Technology />
-  },
+
   {
     id: 'templates',
     component: <Templates />
