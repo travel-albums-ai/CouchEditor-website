@@ -47,7 +47,6 @@ export default function Footer() {
 
       <Box sx={{ display: 'flex', gap: 2, alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', py: 2, width: '1280px', mx: 'auto', mb: 2 }}>
         <Typography color="textSecondary" variant="caption">© 2026 Couch Editor</Typography>
-        <Typography color="textSecondary" variant="caption">Github</Typography>
       </Box>
     </Box>
   </>

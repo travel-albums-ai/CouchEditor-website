@@ -32,9 +32,11 @@ export default function Intro() {
         <Typography>
         Couch Editor is a modern, node-based photo editor that runs locally in your browser. No uploads, No limits. Just creativity
         </Typography>
-        <Button variant="contained" color="primary" size="large" sx={{ borderRadius: 10 }}>
+        <a href="https://couch-editor.com/" target="_blank" rel="noopener noreferrer">
+          <Button variant="contained" color="primary" size="large" sx={{ borderRadius: 10 }}>
           Open Couch Editor <ArrowRight />
-        </Button>
+          </Button>
+        </a>
 
         <Box>
           1, 2, 3
