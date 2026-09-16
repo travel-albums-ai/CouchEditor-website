@@ -2,6 +2,7 @@ import { Box } from '@mui/material';
 import { cloneElement, Fragment } from 'react';
 import Footer from '../header/Footer';
 import Header from '../header/Header';
+import Banner from './components/Banner';
 import Flow from './components/Flow';
 import Intro from './components/Intro';
 import Languages from './components/Languages';
@@ -16,6 +17,10 @@ const sections = [
   {
     id: 'intro',
     component: <Intro />
+  },
+  {
+    id: 'banner',
+    component: <Banner />
   },
   {
     id: 'technology',
