@@ -38,9 +38,6 @@ export default function Intro() {
           </Button>
         </a>
 
-        <Box>
-          1, 2, 3
-        </Box>
       </Box>
 
     </Box>
