@@ -1,6 +1,7 @@
 import { Box } from '@mui/material';
 import { cloneElement, Fragment } from 'react';
 import Footer from '../header/Footer';
+import Header from '../header/Header';
 import Flow from './components/Flow';
 import Intro from './components/Intro';
 import Languages from './components/Languages';
@@ -59,16 +60,15 @@ const sections = [
 export default function Landing() {
 
   return  <>
-    <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
-      <Box sx={{ width: '1280px', display: 'flex', flexDirection: 'column', gap: 4 }}>
-        {sections.map((section, index) => (
-          <Fragment key={section.id}>
-            {cloneElement(section.component, { id: section.id, index: index })}
-          </Fragment>
-        ))}
-      </Box>
-    </Box>
 
-    <Footer />
+    <Box sx={{ width: '1280px', display: 'flex', flexDirection: 'column', gap: 4 }}>
+      <Header />
+      {sections.map((section, index) => (
+        <Fragment key={section.id}>
+          {cloneElement(section.component, { id: section.id, index: index })}
+        </Fragment>
+      ))}
+      <Footer />
+    </Box>
   </>
 }

@@ -7,7 +7,7 @@ export default function Footer() {
 
   return  <>
 
-    <Box sx={{ display: "flex", gap: 2, alignItems: "stretch", justifyContent: "space-between", flexWrap: 'wrap', py: 1, px: 4, width: '1280px', mx: 'auto', flexDirection: 'column' }}>
+    <Box sx={{ display: "flex", gap: 2, alignItems: "stretch", justifyContent: "space-between", flexWrap: 'wrap', flex: 1, flexDirection: 'column' }}>
       <Box sx={{ display: "flex", gap: 2, alignItems: "center", justifyContent: "space-between", flexWrap: 'wrap', flex: 1, mb: 4 }}>
 
         <Box>

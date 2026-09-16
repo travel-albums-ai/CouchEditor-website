@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <>
       <Box>
-        <Box sx={{ display: "flex", gap: 2, alignItems: "center", justifyContent: "space-between", flexWrap: 'wrap', py: 1, px: 4, width: '1280px', mx: 'auto' }}>
+        <Box sx={{ display: "flex", gap: 2, alignItems: "center", justifyContent: "space-between", flexWrap: 'wrap', py: 1, px: 4, flex: 1 }}>
           <Logo />
           <ul className="nav-links">
             {/* <li><a href="./#features">Features</a></li>
